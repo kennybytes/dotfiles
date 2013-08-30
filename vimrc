@@ -5,6 +5,9 @@
 "
 "
 
+call pathogen#infect()
+call pathogen#helptags()
+
 syntax on
 set bg=dark
 
@@ -37,3 +40,5 @@ au BufNewFile,BufRead *.ino set filetype=c
 "" Begin Key configs
 ""
 set pastetoggle=<f5>
+
+map <C-n> :NERDTreeToggle<CR>
