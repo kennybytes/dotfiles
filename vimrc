@@ -24,9 +24,9 @@ set expandtab
 
 ""  Uncomment the following lines to enable syntax highlighting for
 ""  solarized gnome terminal
-"syntax enable
-"colorscheme solarized
-"se t_Co=16
+syntax enable
+colorscheme solarized
+se t_Co=16
 
 ""  To get syntax highlighting on SSH secure shell
 "set term=ansi
