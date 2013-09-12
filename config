@@ -68,10 +68,8 @@ Host wiliki
 Host router
 	Hostname 168.105.130.139
 	User root
+
 Host sakiko
-    Hostname 66.172.12.98
-    User kenny
-Host root
     Hostname 66.172.12.98
     User kenny
 
