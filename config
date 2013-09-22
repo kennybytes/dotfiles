@@ -7,9 +7,17 @@ Host reis1remote
     Hostname 128.171.61.158
     Port 11122
     User kenny
+
+Host reis-forward
+    Hostname 128.171.61.158
+    Port 11122
+    User kenny
+    DynamicForward 8080
+
 Host reis
 	Hostname 128.171.61.159
 	User reis
+
 Host silvia
 	Hostname 168.105.130.139
     Port 8917
@@ -35,15 +43,19 @@ Host ieee
 Host umouse
 	Hostname quantum.eng.hawaii.edu
 	User mmouse
+
 Host ecuh
 	Hostname wiliki.eng.hawaii.edu
 	User ecuh
-Host Ecuh-web
+
+Host ecuh-web
 	Hostname ecuh.org
 	User ecuh
+
 Host sab
 	Hostname quantum.eng.hawaii.edu
 	User eesab
+
 Host sab-spectra
 	Hostname spectra.eng.hawaii.edu
 	User eesab
