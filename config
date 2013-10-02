@@ -68,6 +68,10 @@ Host sadie
 	Hostname 94.249.211.13
 	User root
 
+Host sandie
+    Hostname 198.46.139.204
+    User root
+
 Host uhunix
 	Hostname uhunix.hawaii.edu
 	User luong97
