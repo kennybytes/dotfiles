@@ -20,7 +20,9 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
-        
+
+"" Turns on line numbers 
+set number
 
 ""  Uncomment the following lines to enable syntax highlighting for
 ""  solarized gnome terminal
@@ -34,6 +36,12 @@ se t_Co=16
 ""  Set other filetypes!
 filetype on
 au BufNewFile,BufRead *.ino set filetype=c
+
+"" File specific commands
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd BufRead,BufNewFile   *.html set ts=2 sw=2
+
 
 
 ""  
