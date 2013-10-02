@@ -1,0 +1,22 @@
+# displays a status bar at the bottom of the screen
+# showing with window names, time, and date     
+# caption always "%{= b}%-w%{= G}%n %t%{-}%+w %-=%{G}%c %D, %d %M, %Y "
+
+# takes the current program title from zsh preexec
+#shelltitle "$ |zsh"
+
+# disable splash screen
+startup_message off
+
+# big scrollback buffer
+defscrollback 10000
+
+# detach on hangup (on by default)
+autodetach on
+
+# switching between screen windows (default ctrl-a n, ctrl-a p)
+# note: determined keycodes with 'read'
+#bindkey ^[[d prev # previous with shift-Left arrow
+#lbindkey ^[[c next # next with shift-Right arrow
+#bindkey ^[H prev # previous with alt-shift-h
+#bindkey ^[L next # next with alt-shift-l
