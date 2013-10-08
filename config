@@ -89,6 +89,11 @@ Host sakiko
     Hostname 66.172.12.98
     User kenny
 
+Host sakiko-web
+    Hostname 66.172.12.98
+    User webmaster
+
+
 Host royalbus
     Hostname royalbusinesses.com
     User royalbus
