@@ -42,7 +42,7 @@ autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd BufRead,BufNewFile   *.html set ts=2 sw=2
 
-
+set bs=2
 
 ""  
 "" Begin Key configs
