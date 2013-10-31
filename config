@@ -13,6 +13,11 @@ Host reis-debian-local
     User kenny
     ProxyCommand ssh reis1remote nc %h %p
 
+Host reis-thor
+    Hostname 192.168.1.98
+    User kenny
+    ProxyCommand ssh reis1remote nc %h %p
+
 Host reis-forward
     Hostname 128.171.61.158
     Port 11122
@@ -54,6 +59,10 @@ Host sab-spectra
 ###########################################################
 #           Personal Configurations
 ###########################################################
+
+Host webfaction
+    Hostname kennyluong.com
+    User ffaxkenny
 
 Host sabrina
 	Hostname 64.34.219.14
