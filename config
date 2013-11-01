@@ -131,7 +131,7 @@ Host royalbus
 ###########################################################
 Host phosaigon-web
     Hostname danle.webfactional.com
-    User kenny
+    User danle
 
 ###########################################################
 #           Virtual Configurations
