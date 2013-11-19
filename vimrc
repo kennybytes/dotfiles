@@ -53,6 +53,12 @@ set bs=2
 ""
 set pastetoggle=<f5>
 
+" Set TagList to opoen on the left side
+let Tlist_Use_Right_Window = 0
+
+" Set Nerd Tree on the right side
+let g:NERDTreeWinPos = "right"
+
 " Use Nerd Tree Tabs Toggle, to enable nerdtree support across tabs
 "map <C-n> :NERDTreeToggle<CR>
 map <C-n> :NERDTreeTabsToggle<CR>
