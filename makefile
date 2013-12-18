@@ -7,3 +7,4 @@ links:
 	ln -fs ~/.dotfiles/vim ~/.vim
 	ln -fs ~/.dotfiles/screenrc ~/.screenrc
 	ln -fs ~/.dotfiles/dircolors ~/.dircolors
+	ln -fs ~/.dotfiles/minttyrc ~/.minttyrc
