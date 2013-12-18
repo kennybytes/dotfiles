@@ -4,6 +4,3 @@
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "apps/apt-cyg"]
-	path = apps/apt-cyg
-	url = https://github.com/rcmdnk/apt-cyg.git
