@@ -1,0 +1,12 @@
+Taken from: 
+http://randomartifacts.blogspot.com/2012/10/a-proper-cygwin-environment.html
+
+I've been spending more time in Cygwin lately, after having decided to wean myself from Ye Olde Windows Command Prompt. (Actually, I've been using 4NT since back in the day when it was called 4DOS and ran as a replacement for COMMAND.COM.) As with anything else I use, "out of the box" is just a starting point, and I've spent some time creating a proper Cygwin environment. Here's what I've done:
+
+
+Mapping Cygdrive
+By default, Cygwin mounts all Windows drives under the /cygdrive/ mount point. Who wants to look at and type that all day? Certainly not me. Edit /etc/fstab and replace the existing line:
+none /cygdrive cygdrive binary,posix=0,user 0 0
+with:
+none / cygdrive binary,posix=0,user 0 0
+Now I can type cd /c/Users/ instead of cd /cygdrive/c/Users.
