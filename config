@@ -56,6 +56,8 @@ Host sab-spectra
 	Hostname spectra.eng.hawaii.edu
 	User eesab
 
+
+
 ###########################################################
 #           Personal Configurations
 ###########################################################
@@ -115,9 +117,15 @@ Host sophia
     Port 8918
 	User kenny
 
-Host website
-	Hostname ftp.kennyluong.com
-	User ffaxkenny
+###########################################################
+#           Personal Configurations
+###########################################################
+
+# Ubuntu Lamp Server on VirtualBox
+Host kennydev1
+    Hostname 192.168.56.101
+    Port 22
+    User kenny
 
 ###########################################################
 #           HelloCab Configurations
