@@ -1,0 +1,24 @@
+==============================================================
+Vim Tutorials
+==============================================================
+
+
+ciw
+change the whole word without necessarily being selected on the first letter of the word
+
+`.
+jumps to exact position of last modification in the buffer
+
+g*
+Forward find word under cursor (fuzzy... will include partial matches)
+
+g;
+go backward in the change list in the buffer
+
+g,
+go forward in the change list in the buffer
+
+= Known
+
+*
+Forward find word under cursor (will not include partial matches)
