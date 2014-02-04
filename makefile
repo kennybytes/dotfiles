@@ -8,3 +8,6 @@ links:
 	ln -fs ~/.dotfiles/screenrc ~/.screenrc
 	ln -fs ~/.dotfiles/dircolors ~/.dircolors
 	ln -fs ~/.dotfiles/minttyrc ~/.minttyrc
+
+gitconfig:
+	ln -fs ~/.dotfiles/gitconfig ~/.gitconfig
