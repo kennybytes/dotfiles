@@ -8,7 +8,7 @@
 	diff = true
 
 
-[config]
+[alias]
     # Some extra fun stuff
     ds = diff --staged      # git ds - diff your staged changes == review before committing.
     st = status -sb         # smarter status - include tag and branch info
