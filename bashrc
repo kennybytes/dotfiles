@@ -114,3 +114,7 @@ if [ $OS == "Windows_NT" ]; then
     }
     export -f win
 fi
+
+
+# Add support for git tab completion
+source ~/.git-completion.bash
