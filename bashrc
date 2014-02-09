@@ -116,5 +116,8 @@ if [ $OS == "Windows_NT" ]; then
 fi
 
 
+# SSH autocompletion
+complete -A hostname -C "/usr/bin/perl -e 'my \$match = \$ARGV[1] ? \$ARGV[1] : \".*\"; open(my \$INPUT,\"<\",\"$HOME/.ssh/config\") or exit(0); foreach(<\$INPUT>) {next unless s/^\s*Host(name)?\s+//;chomp;foreach(split(/\s+/)) { print \"\$_\\n\" if(/^\$match/ and not /^\d/ and not /\*/);}}'" ssh 
+
 # Add support for git tab completion
 source ~/.git-completion.bash
