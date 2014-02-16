@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/kenny/UnixBench/results'
-let g:netrw_dirhist_2='/home/Kenny/Code/google_apps/sync-mailing-lists.js'
-let g:netrw_dirhist_3='/home/Kenny/Code/c/FinalProject/final3/gameitemf'
-let g:netrw_dirhist_4='/home/Kenny/Code/c/mmouse-2013/TestBenches'
-let g:netrw_dirhist_5='/home/Kenny/Code/c/mmouse-2013/TestBenches/AnalogToDigitalJosh.X'

@@ -13,8 +13,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -106,3 +106,18 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+# Allow terminal to start a file browser from current directory
+if [ $OS == "Windows_NT" ]; then
+    function win() {
+        cygstart .
+    }
+    export -f win
+fi
+
+
+# SSH autocompletion
+complete -A hostname -C "/usr/bin/perl -e 'my \$match = \$ARGV[1] ? \$ARGV[1] : \".*\"; open(my \$INPUT,\"<\",\"$HOME/.ssh/config\") or exit(0); foreach(<\$INPUT>) {next unless s/^\s*Host(name)?\s+//;chomp;foreach(split(/\s+/)) { print \"\$_\\n\" if(/^\$match/ and not /^\d/ and not /\*/);}}'" ssh 
+
+# Add support for git tab completion
+source ~/.git-completion.bash
