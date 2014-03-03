@@ -108,7 +108,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # Allow terminal to start a file browser from current directory
-if [ $OS == "Windows_NT" ]; then
+if [ "$OS" == "Windows_NT" ]; then
     function win() {
         cygstart .
     }
