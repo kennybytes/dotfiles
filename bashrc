@@ -121,3 +121,5 @@ complete -A hostname -C "/usr/bin/perl -e 'my \$match = \$ARGV[1] ? \$ARGV[1] : 
 
 # Add support for git tab completion
 source ~/.git-completion.bash
+
+export TERM=xterm-256color

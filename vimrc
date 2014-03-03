@@ -62,3 +62,10 @@ let g:NERDTreeWinPos = "right"
 " Use Nerd Tree Tabs Toggle, to enable nerdtree support across tabs
 "map <C-n> :NERDTreeToggle<CR>
 map <C-n> :NERDTreeTabsToggle<CR>
+
+" map ctrl+d to open a shell, so we can toggle between the two quickly!
+noremap <C-d> :sh<cr>
+
+" remap for easier window navigation!
+map <C-J> <C-W>j<C-W>
+map <C-K> <C-W>k<C-W>

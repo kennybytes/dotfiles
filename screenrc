@@ -20,3 +20,9 @@ autodetach on
 #lbindkey ^[[c next # next with shift-Right arrow
 #bindkey ^[H prev # previous with alt-shift-h
 #bindkey ^[L next # next with alt-shift-l
+
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E38;5;%dm'
+defbce "on"
+
+
