@@ -36,6 +36,8 @@ se t_Co=16
 ""  Set other filetypes!
 filetype on
 au BufNewFile,BufRead *.ino set filetype=c
+" Markdown
+au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,README.md  setf markdown
 
 "" File specific commands
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
@@ -71,3 +73,12 @@ noremap <C-d> :sh<cr>
 " remap for easier window navigation!
 map <C-J> <C-W>j<C-W>
 map <C-K> <C-W>k<C-W>
+map <C-H> <C-W>h<C-W>
+map <C-L> <C-W>l<C-W>
+
+" Set the terminal so we can have a transparent terminal in gnome
+hi Normal ctermbg=none
+
+" Turn on auto commenting
+set formatoptions+=r
+
