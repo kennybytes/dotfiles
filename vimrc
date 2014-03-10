@@ -82,3 +82,8 @@ hi Normal ctermbg=none
 " Turn on auto commenting
 set formatoptions+=r
 
+" Remap the sudow command to write to a file that needs root permission
+" w !sudo tee % >/dev/null executes sudo and uses tee to redirect 
+" to null so you don't see it
+cnoremap sudow w !sudo tee % >/dev/null
+
