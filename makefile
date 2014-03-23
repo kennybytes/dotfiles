@@ -11,6 +11,7 @@ links:
 	ln -fs ~/.dotfiles/gitconfig ~/.gitconfig
 	ln -fs ~/.dotfiles/gitconfig ~/.gitconfig
 	ln -fs ~/.dotfiles/git-completion.bash ~/.git-completion.bash
+	ln -fs ~/.dotfiles/zshrc ~/.zshrc
 
 gitconfig:
 	ln -fs ~/.dotfiles/gitconfig ~/.gitconfig
