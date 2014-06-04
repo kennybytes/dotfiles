@@ -3,7 +3,7 @@ all:
 install: module_init links
 
 module_init:
-	./git-init-script.sh
+	./git-clone-script.sh
 	
 links:
 	ln -fs ~/.dotfiles/ssh_config ~/.ssh/config
