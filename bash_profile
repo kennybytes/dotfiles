@@ -25,3 +25,4 @@ fi
 
 # Add support for git tab completion
 source ~/.git-completion.bash
+source ~/.bashrc
