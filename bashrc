@@ -125,7 +125,7 @@ source ~/.git-completion.bash
 export TERM=xterm-256color
 export PATH=$PATH:/home/$USER/bin
 
-# Aliases
+# Useful git aliases
 alias g='git'
 alias gst='git status'
 alias gd='git diff'
