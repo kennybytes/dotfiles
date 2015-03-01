@@ -9,7 +9,6 @@ call pathogen#infect()
 call pathogen#helptags()
 
 syntax on
-set bg=dark
 
 ""  Uncomment to enable 100 column red highlighting 
 "match ErrorMsg '\%>100v.\+'
@@ -27,8 +26,12 @@ set number
 ""  Uncomment the following lines to enable syntax highlighting for
 ""  solarized gnome terminal
 syntax enable
-colorscheme solarized
-se t_Co=16
+let g:base16_shell_path="/home/kenny/Code/base16-builder/output/shell/"
+let base16colorspace="256"  " Access colors present in 256 colorspace
+set t_Co=256
+set bg=dark
+colorscheme base16-default
+
 
 ""  To get syntax highlighting on SSH secure shell
 "set term=ansi
