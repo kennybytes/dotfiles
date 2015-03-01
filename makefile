@@ -17,6 +17,7 @@ links:
 	ln -fs ~/.dotfiles/gitconfig ~/.gitconfig
 	ln -fs ~/.dotfiles/git-completion.bash ~/.git-completion.bash
 	ln -fs ~/.dotfiles/zshrc ~/.zshrc
+	ln -fs ~/.dotfiles/emacs ~/.emacs
 	ln -fs ~/.dotfiles/modules/oh-my-zsh ~/.oh-my-zsh
 profile:
 	ln -fs ~/.dotfiles/bash_profile ~/.bash_profile
