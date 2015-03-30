@@ -57,7 +57,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/home/$USER/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/$USER/.cabal/bin/"
+export PATH="/home/$USER/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/$USER/.cabal/bin/:/home/$USER/.shadow/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -84,6 +84,16 @@ alias l='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -lh'
 alias lll='ls $LS_OPTIONS -alh'
 alias sl='ls $LS_OPTIONS' # often screw this up
+alias vncviewer='xvnc4viewer'
+alias more_power='sudo cpufreq-set -r -g performance'
+alias less_power='sudo cpufreq-set -r -g powersave'
+alias multimonitor='vblank_mode=0 primusrun true'
 
 export TERM=xterm-256color
 export EDITOR=vim
+
+PATH="/home/kenny/perl5/bin${PATH+:}${PATH}"; export PATH;
+PERL5LIB="/home/kenny/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/kenny/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/kenny/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/kenny/perl5"; export PERL_MM_OPT;
