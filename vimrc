@@ -26,7 +26,7 @@ set number
 ""  Uncomment the following lines to enable syntax highlighting for
 ""  solarized gnome terminal
 syntax enable
-let g:base16_shell_path="/home/kenny/Code/apps/base16-builder/output/shell/"
+let g:base16_shell_path="/home/kenny/.dotfiles/modules/base16-builder/output/shell"
 let base16colorspace="256"  " Access colors present in 256 colorspace
 set t_Co=256
 set bg=dark
