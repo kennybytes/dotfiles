@@ -1,1 +1,1 @@
-pandoc pandoc-citeproc texlive-full
+pandoc pandoc-citeproc texlive-full haskell-platform
