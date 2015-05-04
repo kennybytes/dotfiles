@@ -1,9 +1,13 @@
-all:
+all: install-core
 
-install: module_init links packages
+install-core: module_init links packages-core
+install-full: install-core packages-extra
 
-packages:
-	./install_packages.sh
+packages-core:
+	sudo ./install-packages.sh core
+
+packages-extra:
+	sudo ./install-packages.sh extra
 
 module_init:
 	./git-clone-script.sh
