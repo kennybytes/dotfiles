@@ -1,6 +1,9 @@
 all:
 
-install: module_init links
+install: module_init links packages
+
+packages:
+	./install_packages.sh
 
 module_init:
 	./git-clone-script.sh
