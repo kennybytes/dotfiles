@@ -1,1 +1,1 @@
-pandoc pandoc-citeproc
+pandoc pandoc-citeproc texlive-full
