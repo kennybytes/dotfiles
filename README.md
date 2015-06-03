@@ -19,3 +19,11 @@ Clone the respository:
 Then run the makefile:
 
     $ make install
+
+# Directories
+    
+* modules/ - contains other useful git repos
+* packages/ - contains my custom package installer and packagelists
+* scripts/ - useful scripts
+* vim/ - my shared vim directory :)
+
