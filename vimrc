@@ -5,26 +5,33 @@
 "
 "
 
+" ------------------------------------- 
+" Pathogen
+" ------------------------------------- 
 call pathogen#infect()
 call pathogen#helptags()
 
-syntax on
+" Uncomment to enable 100 column red highlighting 
+" match ErrorMsg '\%>100v.\+'
 
-""  Uncomment to enable 100 column red highlighting 
-"match ErrorMsg '\%>100v.\+'
-
-""  Set Paragraph options
+" ------------------------------------- 
+" Paragraph and display formatting
+" ------------------------------------- 
+" Set Paragraph options
 set autoindent
 set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
-
-"" Turns on line numbers 
+" Turns on line numbers 
 set number
 
-""  Uncomment the following lines to enable syntax highlighting for
-""  solarized gnome terminal
+" ------------------------------------- 
+" Syntax Highlighting
+" ------------------------------------- 
+" Uncomment the following lines to enable syntax highlighting for
+" solarized gnome terminal
+syntax on
 syntax enable
 let g:base16_shell_path="/home/kenny/.dotfiles/modules/base16-builder/output/shell"
 let base16colorspace="256"  " Access colors present in 256 colorspace
@@ -32,38 +39,41 @@ set t_Co=256
 set bg=dark
 colorscheme base16-default
 
+" ------------------------------------- 
+" To get syntax highlighting on SSH secure shell
+" ------------------------------------- 
+" set term=ansi
 
-""  To get syntax highlighting on SSH secure shell
-"set term=ansi
-
-""  Set other filetypes!
+" ------------------------------------- 
+" Set Highlighting for other filetypes
+" ------------------------------------- 
 filetype on
 au BufNewFile,BufRead *.ino set filetype=c
-" Markdown
 au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,README.md  setf markdown
 
-"" File specific commands
+
+" ------------------------------------- 
+" File specific commands
+" ------------------------------------- 
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd BufRead,BufNewFile   *.html set ts=2 sw=2
 autocmd BufRead,BufNewFile   *.php set ts=2 sw=2
 autocmd BufRead,BufNewFile   *.md setlocal spell
 autocmd BufRead,BufNewFile   *.markdown setlocal spell
-" autocmd BufRead,BufNewFile   *.py set ts=4 noexpandtab
 autocmd BufRead,BufNewFile   Makefile set noexpandtab
 autocmd BufRead,BufNewFile   makefile set noexpandtab
-
 setl nosmartindent
-
 set bs=2
 
-""  
-"" Begin Key configs
-""
+" ------------------------------------- 
+" Begin Key Configurations
+" -------------------------------------
 set pastetoggle=<f5>
 
 " Set TagList to opoen on the left side
-let Tlist_Use_Right_Window = 0
+" 0 - on the left, 1 - on the right
+let Tlist_Use_Right_Window = 1
 
 " Set Nerd Tree on the right side
 let g:NERDTreeWinPos = "right"
@@ -72,8 +82,9 @@ let g:NERDTreeWinPos = "right"
 "map <C-n> :NERDTreeToggle<CR>
 map <C-n> :NERDTreeTabsToggle<CR>
 
-" map ctrl+d to open a shell, so we can toggle between the two quickly!
-noremap <C-d> :sh<cr>
+" Map ctrl+d to open a shell, so we can toggle between the two quickly!
+" Sometimes works against me... consider using something else
+" noremap <C-d> :sh<cr>
 
 " remap for easier window navigation!
 map <C-J> <C-W>j<C-W>
