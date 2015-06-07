@@ -31,3 +31,6 @@
 [submodule "vim/bundle/vim-markdown"]
 	path = vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "modules/mintty-color-schemes"]
+	path = modules/mintty-color-schemes
+	url = https://github.com/oumu/mintty-color-schemes.git
