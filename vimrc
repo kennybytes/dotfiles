@@ -33,11 +33,11 @@ set number
 " solarized gnome terminal
 syntax on
 syntax enable
-let g:base16_shell_path="/home/kenny/.dotfiles/modules/base16-builder/output/shell"
-let base16colorspace="256"  " Access colors present in 256 colorspace
-set t_Co=256
+" let g:base16_shell_path="/home/kluong/.dotfiles/modules/base16-builder/output/shell"
+" let base16colorspace="256"  " Access colors present in 256 colorspace
+ "set t_Co=256
 set bg=dark
-colorscheme base16-default
+"colorscheme base16-default
 
 " ------------------------------------- 
 " To get syntax highlighting on SSH secure shell
@@ -50,6 +50,7 @@ colorscheme base16-default
 filetype on
 au BufNewFile,BufRead *.ino set filetype=c
 au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,README.md  setf markdown
+au BufNewFile,BufRead Gruntfile setf javascript
 
 
 " ------------------------------------- 
