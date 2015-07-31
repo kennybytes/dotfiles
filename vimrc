@@ -14,6 +14,17 @@ call pathogen#helptags()
 " Uncomment to enable 100 column red highlighting 
 " match ErrorMsg '\%>100v.\+'
 
+" Use leader and 'cd' to change vim directory
+nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+
+" Show trailing whitepace and spaces before a tab:
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
 " ------------------------------------- 
 " Paragraph and display formatting
 " ------------------------------------- 
