@@ -36,6 +36,7 @@ set shiftwidth=4
 set expandtab
 " Turns on line numbers 
 set number
+set list
 
 " ------------------------------------- 
 " Syntax Highlighting
