@@ -34,21 +34,15 @@
 [submodule "modules/mintty-color-schemes"]
 	path = modules/mintty-color-schemes
 	url = https://github.com/oumu/mintty-color-schemes.git
-[submodule "vim/bundle/ag.vim"]
-	path = vim/bundle/ag.vim
-	url = https://github.com/rking/ag.vim.git
-[submodule "vim/bundle/ctrlp.vim"]
-	path = vim/bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
 [submodule "vim/bundle/vim-slim"]
 	path = vim/bundle/vim-slim
 	url = https://github.com/slim-template/vim-slim.git
-[submodule "vim/bundle/ag.vim"]
-	path = vim/bundle/ag.vim
-	url = https://github.com/rking/ag.vim.git
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/bundle/ag.vim"]
+	path = vim/bundle/ag.vim
+	url = https://github.com/rking/ag.vim.git
 [submodule "vim/bundle/ctrlp.vim"]
 	path = vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
