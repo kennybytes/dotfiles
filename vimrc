@@ -19,7 +19,10 @@ let g:syntastic_check_on_wq = 0
 set laststatus=2
 let g:airline_theme="luna"
 
+" HTML indenting
 filetype indent on
+let g:html_indent_inctags = "html,body,head,tbody"
+
 
 " ------------------------------------- 
 " Pathogen
