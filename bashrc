@@ -168,3 +168,6 @@ alias grhh='git reset HEAD --hard'
 alias gclean='git reset --hard && git clean -dfx'
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 alias vihosts='cygstart --action=runas vi "C:\Windows\System32\drivers\etc\hosts"'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
