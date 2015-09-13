@@ -64,3 +64,6 @@
 [submodule "vim/bundle/vim-mix"]
 	path = vim/bundle/vim-mix
 	url = git@github.com:mattreduce/vim-mix.git
+[submodule "vim/bundle/matchit"]
+	path = vim/bundle/matchit
+	url = https://github.com/tmhedberg/matchit.git
