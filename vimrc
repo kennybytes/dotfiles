@@ -46,6 +46,7 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+
 " ------------------------------------- 
 " Paragraph and display formatting
 " ------------------------------------- 
@@ -81,7 +82,7 @@ set bg=dark
 " ------------------------------------- 
 filetype on
 au BufNewFile,BufRead *.ino set filetype=c
-au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,README.md  setf markdown
+au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.md  setf markdown
 au BufNewFile,BufRead Gruntfile setf javascript
 
 
@@ -164,3 +165,6 @@ if has("gui_running")
     autocmd!
   augroup end
 endif
+
+set nocompatible
+
