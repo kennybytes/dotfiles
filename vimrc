@@ -25,6 +25,9 @@ let g:airline_theme="luna"
 filetype indent on
 let g:html_indent_inctags = "html,body,head,tbody"
 
+" Markdown folding doesn't work properly so disable it
+let g:vim_markdown_folding_disabled=1
+
 
 " ------------------------------------- 
 " Pathogen
