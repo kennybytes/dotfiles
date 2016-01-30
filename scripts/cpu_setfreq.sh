@@ -1,2 +1,2 @@
 # set max cpu freq
-cpufreq-set -r -u 1.2GHz
+cpufreq-set -r -u 3.2GHz
