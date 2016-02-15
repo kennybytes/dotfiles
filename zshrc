@@ -109,3 +109,6 @@ export NVM_DIR="/home/kluong/.nvm"
 # Rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# added by Anaconda3 2.5.0 installer
+export PATH="/home/kluong/anaconda3/bin:$PATH"
