@@ -112,3 +112,5 @@ eval "$(rbenv init -)"
 
 # added by Anaconda3 2.5.0 installer
 export PATH="/home/kluong/apps/anaconda3/bin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
