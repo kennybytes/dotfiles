@@ -96,8 +96,6 @@ autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd BufRead,BufNewFile   *.html set ts=2 sw=2
 autocmd BufRead,BufNewFile   *.php set ts=2 sw=2
-autocmd BufRead,BufNewFile   *.md setlocal spell
-autocmd BufRead,BufNewFile   *.markdown setlocal spell
 autocmd BufRead,BufNewFile   Makefile set noexpandtab
 autocmd BufRead,BufNewFile   makefile set noexpandtab
 setl nosmartindent
