@@ -3,6 +3,7 @@
 	email = luong97@hawaii.edu
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore_global
 [color]
 	ui = true
 	diff = true
