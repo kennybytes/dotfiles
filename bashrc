@@ -171,5 +171,6 @@ alias vihosts='cygstart --action=runas vi "C:\Windows\System32\drivers\etc\hosts
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="~/.local/bin:$PATH"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
