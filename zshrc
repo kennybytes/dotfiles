@@ -52,6 +52,7 @@ ZSH_THEME="fishy" #default
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
+plugins=(git ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,16 +103,20 @@ PERL_MM_OPT="INSTALL_BASE=/home/kenny/perl5"; export PERL_MM_OPT;
 #   grep: warning: GREP_OPTIONS is deprecated; please use an alias or script
 unset GREP_OPTIONS
 
-
 # NVM
 export NVM_DIR="/home/kluong/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# Rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# rbenv
+if [[ -a $HOME/.rbenv/bin/rbenv ]]; then
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    eval "$(rbenv init -)data "
+fi
 
 # added by Anaconda3 2.5.0 installer
 export PATH="/home/kluong/apps/anaconda3/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH="/home/kluong/.local/gnuplot-5.0.5/src:$PATH"
+
