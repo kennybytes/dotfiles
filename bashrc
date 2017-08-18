@@ -176,4 +176,4 @@ export PATH="~/.local/bin:$PATH"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # For local config files that can't be checked into main version control
-[ -f ~/.dotfile-local ] && source ~/.dotfile-local
+[ -f ~/.dotfiles-local/bashrc ] && source ~/.dotfiles-local/bashrc
