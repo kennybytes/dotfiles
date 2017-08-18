@@ -161,7 +161,8 @@ augroup END
 
 if has("gui_running")
   set guioptions=0
-  set guifont=Ubuntu\ Mono\ Regular\ 12
+  " Disable this for now since most machines may not have this font
+  " set guifont=Ubuntu\ Mono\ Regular\ 12
   colorscheme slate
   augroup AuNERDTreeCmd
     autocmd!
