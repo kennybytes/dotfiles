@@ -168,6 +168,7 @@ alias grhh='git reset HEAD --hard'
 alias gclean='git reset --hard && git clean -dfx'
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 alias vihosts='cygstart --action=runas vi "C:\Windows\System32\drivers\etc\hosts"'
+alias tnew='tmux new -s'
 
 alias bashsource='source ~/.bashrc'
 
@@ -179,3 +180,6 @@ export PATH="~/.local/bin:$PATH"
 
 # For local config files that can't be checked into main version control
 [ -f ~/.dotfiles-local/bashrc ] && source ~/.dotfiles-local/bashrc
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
