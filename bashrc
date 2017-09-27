@@ -171,6 +171,9 @@ alias vihosts='cygstart --action=runas vi "C:\Windows\System32\drivers\etc\hosts
 alias tnew='tmux new -s'
 alias tattach='tmux attach'
 
+# list users on a linux machine
+alias list_users='cut -d: -f1 /etc/passwd'
+
 alias bashsource='source ~/.bashrc'
 
 ### Added by the Heroku Toolbelt
