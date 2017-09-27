@@ -169,6 +169,7 @@ alias gclean='git reset --hard && git clean -dfx'
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 alias vihosts='cygstart --action=runas vi "C:\Windows\System32\drivers\etc\hosts"'
 alias tnew='tmux new -s'
+alias tattach='tmux attach'
 
 alias bashsource='source ~/.bashrc'
 
