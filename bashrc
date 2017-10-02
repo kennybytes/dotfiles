@@ -170,6 +170,7 @@ alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 alias vihosts='cygstart --action=runas vi "C:\Windows\System32\drivers\etc\hosts"'
 
 alias bashsource='source ~/.bashrc'
+alias h='history'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -179,3 +180,4 @@ export PATH="~/.local/bin:$PATH"
 
 # For local config files that can't be checked into main version control
 [ -f ~/.dotfiles-local/bashrc ] && source ~/.dotfiles-local/bashrc
+
