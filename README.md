@@ -26,4 +26,3 @@ Then run the makefile:
 * packages/ - contains my custom package installer and packagelists
 * scripts/ - useful scripts
 * vim/ - my shared vim directory :)
-
