@@ -13,8 +13,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=10000
-HISTFILESIZE=20000
+HISTSIZE=100000
+HISTFILESIZE=200000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -188,3 +188,5 @@ export PATH="~/.local/bin:$PATH"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 [ -f ~/.rvm ] && export PATH="$PATH:$HOME/.rvm/bin"
+
+alias gcd='cd $(git rev-parse --show-toplevel)'
