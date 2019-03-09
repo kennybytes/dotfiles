@@ -42,6 +42,11 @@ call pathogen#helptags()
 
 " Uncomment to enable 100 column red highlighting 
 " match ErrorMsg '\%>100v.\+'
+"
+
+" show the indentation for tabs
+set listchars=tab:\|\ 
+set list
 
 " Use leader and 'cd' to change vim directory
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
