@@ -8,7 +8,6 @@
 	ui = true
 	diff = true
 
-
 [alias]
     # Some extra fun stuff
     ds = diff --staged      # git ds - diff your staged changes == review before committing.
@@ -30,7 +29,7 @@
     cl = clone
     ci = commit
     co = checkout
-    br = branch 
+    br = branch
     diff = diff --word-diff
     dc = diff --cached
 
@@ -40,12 +39,18 @@
     ss = stash save
 
     # log related - thanks to @mwd410
-    l = log 
+    l = log
     lh = log --graph
     la = !git lh --date-order --all 2> /dev/null
     lb = log --graph --simplify-by-decoration
-    lba = !git lb --all 
+    lba = !git lb --all
     h = !git --no-pager log --graph -n 15
     a = !git --no-pager la -n 15
 [push]
 	default = simple
+
+[include]
+    path = -~/.dotfiles-local/gitconfig
+
+[include]
+    path = -~/.dotfiles-custom/gitconfig

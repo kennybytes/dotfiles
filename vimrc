@@ -97,6 +97,8 @@ filetype on
 au BufNewFile,BufRead *.ino set filetype=c
 au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.md  setf markdown
 au BufNewFile,BufRead Gruntfile setf javascript
+au BufNewFile,BufRead *.sls,*.mdown,*.mkd,*.mkdn,*.md  setf yaml
+
 
 
 " ------------------------------------- 
@@ -181,3 +183,5 @@ endif
 
 set nocompatible
 
+" Pretty format single line shell commands
+nnoremap <Leader>\ :s/\v\s+-/ \\\r\t-/g<Enter>
