@@ -195,3 +195,9 @@ export PATH=$PATH:/usr/local/go/bin
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# set default editor for visudo
+# https://askubuntu.com/questions/531184/change-the-default-editor-when-sudo-visudo
+VISUAL="vim" ; export VISUAL
+EDITOR="$VISUAL" ; export EDITOR
+
