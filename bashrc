@@ -201,3 +201,18 @@ export NVM_DIR="$HOME/.nvm"
 VISUAL="vim" ; export VISUAL
 EDITOR="$VISUAL" ; export EDITOR
 
+alias c1="awk '{print \$1}'"
+alias c2="awk '{print \$2}'"
+alias c3="awk '{print \$3}'"
+alias c4="awk '{print \$4}'"
+alias c5="awk '{print \$5}'"
+alias c6="awk '{print \$6}'"
+alias c7="awk '{print \$7}'"
+alias c8="awk '{print \$8}'"
+alias c9="awk '{print \$9}'"
+
+alias kubecontext=$'kubectl config view -o json | jq \'."current-context"\''
+
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+alias pbcfpaste='echo "$(pbpaste)" | cf-paste  | cut -d" " -f7'

@@ -1,6 +1,5 @@
 [user]
 	name = Kenny Luong
-	email = luong97@hawaii.edu
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
