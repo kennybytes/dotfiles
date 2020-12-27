@@ -216,3 +216,5 @@ alias kubecontext=$'kubectl config view -o json | jq \'."current-context"\''
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias pbcfpaste='echo "$(pbpaste)" | cf-paste  | cut -d" " -f7'
+
+[ -s "/usr/share/doc/fzf/examples/key-bindings.bash" ] && source /usr/share/doc/fzf/examples/key-bindings.bash
