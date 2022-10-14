@@ -1,22 +1,26 @@
-#!/bin/sh
+#!/bin/bash
 #
 # git-push-to-target: Push this commit to a branch specified in its
 # commit description.
 #
 # Copyright (c) 2017 William Chargin. Released under the MIT license.
 
-# taken from:
-# https://wchargin.com/posts/managing-dependent-pull-requests/
-
 set -eu
 
 DIRECTIVE='kluong-branch'  # any regex metacharacters should be escaped
-BRANCH_PREFIX='kluong-'
+BRANCH_PREFIX='kluong/'
+SED=sed
+
+# use gsed on macos for compatiblity
+# `brew install gnu-sed`
+if [[ $OSTYPE == 'darwin'* ]]; then
+    SED=gsed
+fi
 
 target_branch() {
     directive="$( \
         git show --pretty='%B' \
-        | sed -n 's/^'"${DIRECTIVE}"': \([A-Za-z0-9_.-]\+\)$/\1/p' \
+        | $SED -n 's/^'"${DIRECTIVE}"': \([A-Za-z0-9_.-]\+\)$/\1/p' \
         ; )"
     if [ -z "${directive}" ]; then
         printf >&2 'error: missing "%s" directive\n' "${DIRECTIVE}"
