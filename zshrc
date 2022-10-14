@@ -21,3 +21,4 @@ else
   zstyle ':completion:*:default' list-colors ''
 fi
 
+export PATH=$PATH:$HOME/.dotfiles/bin
