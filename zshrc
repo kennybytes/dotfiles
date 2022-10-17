@@ -22,6 +22,7 @@ else
 fi
 
 export PATH=$PATH:$HOME/.dotfiles/bin
+export PATH=$PATH:$HOME/.dotfiles-local/bin
 
 # Useful git aliases
 alias g='git'
