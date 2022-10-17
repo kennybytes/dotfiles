@@ -1,0 +1,5 @@
+Include ~/.dotfiles-local/ssh_config
+
+Host 192.168.5.80
+    HostName 192.168.5.80
+
