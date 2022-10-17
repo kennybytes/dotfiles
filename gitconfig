@@ -1,5 +1,9 @@
+[include]
+    path = ~/.dotfiles-local/gitconfig
+
 [user]
 	name = Kenny Luong
+
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
