@@ -68,3 +68,5 @@ alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
 alias gclean='git reset --hard && git clean -dfx'
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
+alias gcd='cd $(git rev-parse --show-toplevel)'
+
