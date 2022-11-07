@@ -70,3 +70,4 @@ alias gclean='git reset --hard && git clean -dfx'
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 alias gcd='cd $(git rev-parse --show-toplevel)'
 
+source $HOME/.dotfiles-local/zshrc
