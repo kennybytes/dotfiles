@@ -4,6 +4,7 @@
 # commit description.
 #
 # Copyright (c) 2017 William Chargin. Released under the MIT license.
+# https://wchargin.com/posts/managing-dependent-pull-requests/
 
 set -eu
 
